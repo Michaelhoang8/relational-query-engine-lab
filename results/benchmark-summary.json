@@ -1,0 +1,58 @@
+[
+  {
+    "candidate_pairs": 102400,
+    "configuration": "uniform_nested_late_filter",
+    "operator_output_total": 972,
+    "output_rows": 12,
+    "predicate_evaluations": 320
+  },
+  {
+    "candidate_pairs": 3840,
+    "configuration": "uniform_nested_pushdown",
+    "operator_output_total": 664,
+    "output_rows": 12,
+    "predicate_evaluations": 320
+  },
+  {
+    "candidate_pairs": 320,
+    "configuration": "uniform_hash_late_filter",
+    "operator_output_total": 972,
+    "output_rows": 12,
+    "predicate_evaluations": 320
+  },
+  {
+    "candidate_pairs": 12,
+    "configuration": "uniform_hash_pushdown",
+    "operator_output_total": 664,
+    "output_rows": 12,
+    "predicate_evaluations": 320
+  },
+  {
+    "candidate_pairs": 102400,
+    "configuration": "skewed_nested_late_filter",
+    "operator_output_total": 27200,
+    "output_rows": 960,
+    "predicate_evaluations": 25600
+  },
+  {
+    "candidate_pairs": 3840,
+    "configuration": "skewed_nested_pushdown",
+    "operator_output_total": 1612,
+    "output_rows": 960,
+    "predicate_evaluations": 320
+  },
+  {
+    "candidate_pairs": 25600,
+    "configuration": "skewed_hash_late_filter",
+    "operator_output_total": 27200,
+    "output_rows": 960,
+    "predicate_evaluations": 25600
+  },
+  {
+    "candidate_pairs": 960,
+    "configuration": "skewed_hash_pushdown",
+    "operator_output_total": 1612,
+    "output_rows": 960,
+    "predicate_evaluations": 320
+  }
+]

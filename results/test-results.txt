@@ -1,0 +1,15 @@
+test_360_seeded_graphs_plans_against_sqlite (test_engine.EngineTests.test_360_seeded_graphs_plans_against_sqlite) ... ok
+test_all_fixed_cases_and_bag_multiplicity (test_engine.EngineTests.test_all_fixed_cases_and_bag_multiplicity) ... ok
+test_complete_three_valued_boolean_tables_against_sqlite (test_engine.EngineTests.test_complete_three_valued_boolean_tables_against_sqlite) ... ok
+test_composite_keys_nested_selection_and_projection_rewrites (test_engine.EngineTests.test_composite_keys_nested_selection_and_projection_rewrites) ... ok
+test_hash_collision_is_not_equality_and_null_never_matches (test_engine.EngineTests.test_hash_collision_is_not_equality_and_null_never_matches) ... ok
+test_outer_join_counterexample_and_optimizer_boundary (test_engine.EngineTests.test_outer_join_counterexample_and_optimizer_boundary) ... ok
+test_text_binary_collation_and_integer_boundaries_match_sqlite (test_engine.EngineTests.test_text_binary_collation_and_integer_boundaries_match_sqlite) ... ok
+test_validation_and_execution_budgets (test_engine.EngineTests.test_validation_and_execution_budgets) ... ok
+test_distinct_colliding_integer_keys_keep_bag_and_outer_join_semantics (test_review.ReviewTests.test_distinct_colliding_integer_keys_keep_bag_and_outer_join_semantics) ... ok
+test_optimizer_retains_valid_selections_when_combining_exceeds_predicate_depth (test_review.ReviewTests.test_optimizer_retains_valid_selections_when_combining_exceeds_predicate_depth) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.149s
+
+OK

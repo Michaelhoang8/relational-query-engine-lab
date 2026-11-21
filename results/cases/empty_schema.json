@@ -1,0 +1,152 @@
+{
+  "hash": {
+    "columns": [],
+    "rows": [
+      [],
+      [],
+      []
+    ],
+    "stats": {
+      "root": {
+        "candidate_pairs": 0,
+        "distinct_build_keys": 0,
+        "input_rows": 3,
+        "largest_key_group": 0,
+        "null_key_rows": 0,
+        "operator": "select",
+        "output_rows": 3,
+        "predicate_evaluations": 3,
+        "right_materialized": 0
+      },
+      "root.input": {
+        "candidate_pairs": 0,
+        "distinct_build_keys": 0,
+        "input_rows": 0,
+        "largest_key_group": 0,
+        "null_key_rows": 0,
+        "operator": "scan",
+        "output_rows": 3,
+        "predicate_evaluations": 0,
+        "right_materialized": 0
+      }
+    }
+  },
+  "hash_plan": {
+    "input": {
+      "op": "scan",
+      "table": "empty"
+    },
+    "op": "select",
+    "predicate": {
+      "op": "true"
+    }
+  },
+  "input": {
+    "plan": {
+      "input": {
+        "op": "scan",
+        "table": "empty"
+      },
+      "op": "select",
+      "predicate": {
+        "op": "true"
+      }
+    },
+    "tables": {
+      "empty": {
+        "columns": [],
+        "rows": [
+          [],
+          [],
+          []
+        ]
+      }
+    }
+  },
+  "optimized": {
+    "columns": [],
+    "rows": [
+      [],
+      [],
+      []
+    ],
+    "stats": {
+      "root": {
+        "candidate_pairs": 0,
+        "distinct_build_keys": 0,
+        "input_rows": 3,
+        "largest_key_group": 0,
+        "null_key_rows": 0,
+        "operator": "select",
+        "output_rows": 3,
+        "predicate_evaluations": 3,
+        "right_materialized": 0
+      },
+      "root.input": {
+        "candidate_pairs": 0,
+        "distinct_build_keys": 0,
+        "input_rows": 0,
+        "largest_key_group": 0,
+        "null_key_rows": 0,
+        "operator": "scan",
+        "output_rows": 3,
+        "predicate_evaluations": 0,
+        "right_materialized": 0
+      }
+    }
+  },
+  "optimized_plan": {
+    "input": {
+      "op": "scan",
+      "table": "empty"
+    },
+    "op": "select",
+    "predicate": {
+      "op": "true"
+    }
+  },
+  "original": {
+    "columns": [],
+    "rows": [
+      [],
+      [],
+      []
+    ],
+    "stats": {
+      "root": {
+        "candidate_pairs": 0,
+        "distinct_build_keys": 0,
+        "input_rows": 3,
+        "largest_key_group": 0,
+        "null_key_rows": 0,
+        "operator": "select",
+        "output_rows": 3,
+        "predicate_evaluations": 3,
+        "right_materialized": 0
+      },
+      "root.input": {
+        "candidate_pairs": 0,
+        "distinct_build_keys": 0,
+        "input_rows": 0,
+        "largest_key_group": 0,
+        "null_key_rows": 0,
+        "operator": "scan",
+        "output_rows": 3,
+        "predicate_evaluations": 0,
+        "right_materialized": 0
+      }
+    }
+  },
+  "rewrites": [],
+  "sqlite": {
+    "columns": [],
+    "parameters": [],
+    "query": "SELECT * FROM (SELECT 1 AS \"__empty__\" FROM \"empty\") WHERE 1",
+    "rows": [
+      [],
+      [],
+      []
+    ],
+    "sqlite_version": "3.50.4"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "captured_at_utc": "2026-11-21T02:19:08.583253+00:00",
+  "source": "Actual browser rendering of docs/report.html",
+  "recording": "Continuous automated browser review; not manual development footage",
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "page_title": "Relational execution \u00b7 plans and semantics",
+  "report_sha256_normalized_text": "1c4ffacaa422470de03b1c65885f3ce8d7a0ad1096a2d51be160a3d9782a71d4",
+  "video_sha256": "0125f76fb87718a6e1bbd473bda3ffbd324147a6cb5a59b26529fa4c761e7215",
+  "captures": [
+    {
+      "path": "docs/screenshots/01_overview.png",
+      "section": "overview",
+      "sha256": "803ce623388c3538678f9fceee243a21b0bc2c7bbc0a7fe96468a7e569d5df99"
+    },
+    {
+      "path": "docs/screenshots/02_plans.png",
+      "section": "plans",
+      "sha256": "36dc4d5da666ca7ef5a06c36757fe59d3ce85c2b35f87d87b8abdeb8724eb1e8"
+    },
+    {
+      "path": "docs/screenshots/03_nulls.png",
+      "section": "nulls",
+      "sha256": "77347b7be1fb65fc6d77f9f42da14afbfc637c46ca5c72c59d86443c59183986"
+    },
+    {
+      "path": "docs/screenshots/04_outerjoin.png",
+      "section": "outerjoin",
+      "sha256": "48c5cf4ff2a70a888bd67470e589f1c0f5948eaa5140de644c1e21be65bed8e7"
+    },
+    {
+      "path": "docs/screenshots/05_joins.png",
+      "section": "joins",
+      "sha256": "e16fbaf71a0de30de55119951860aa637dc66a4b6d7dd00fcac167399b718454"
+    },
+    {
+      "path": "docs/screenshots/06_reproduction.png",
+      "section": "reproduction",
+      "sha256": "e07d497c8b4f62f0802d028a7941a95dfe0c5ac499d679dbab5931a8a6b4d850"
+    }
+  ]
+}

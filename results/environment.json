@@ -1,0 +1,14 @@
+{
+  "benchmark_rows_per_input": 320,
+  "platform": "Windows-11-10.0.26200-SP0",
+  "processor": "AMD64 Family 25 Model 97 Stepping 2, AuthenticAMD",
+  "python": "3.13.17 (tags/v3.13.17:64e080d, Oct 21 2026, 14:08:53) [MSC v.1944 64 bit (AMD64)]",
+  "random_cases": 80,
+  "random_seed": 501862,
+  "recorded_utc": "2026-11-21T02:07:15.924492+00:00",
+  "samples_per_configuration": 12,
+  "sqlite_version": "3.50.4",
+  "timing_order_seed": 76214,
+  "timing_scope": "execute includes plan copy/validation, iterator execution, counters and final materialization; excludes SQLite, JSON encoding, disk I/O and plotting",
+  "warmups_per_configuration": 1
+}

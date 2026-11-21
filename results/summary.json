@@ -1,0 +1,60 @@
+[
+  {
+    "output_rows": 7,
+    "rewrites": [],
+    "scenario": "duplicate_inner",
+    "sqlite_equal": true
+  },
+  {
+    "output_rows": 9,
+    "rewrites": [],
+    "scenario": "null_left",
+    "sqlite_equal": true
+  },
+  {
+    "output_rows": 4,
+    "rewrites": [
+      "push_left_predicate_through_inner_join"
+    ],
+    "scenario": "selective_inner",
+    "sqlite_equal": true
+  },
+  {
+    "output_rows": 6,
+    "rewrites": [
+      "push_left_predicate_through_left_join"
+    ],
+    "scenario": "left_preserved_pushdown",
+    "sqlite_equal": true
+  },
+  {
+    "output_rows": 2,
+    "rewrites": [],
+    "scenario": "outer_where",
+    "sqlite_equal": true
+  },
+  {
+    "output_rows": 7,
+    "rewrites": [],
+    "scenario": "unsafe_right_pushdown",
+    "sqlite_equal": true
+  },
+  {
+    "output_rows": 7,
+    "rewrites": [],
+    "scenario": "empty_projection",
+    "sqlite_equal": true
+  },
+  {
+    "output_rows": 3,
+    "rewrites": [],
+    "scenario": "empty_schema",
+    "sqlite_equal": true
+  },
+  {
+    "output_rows": 0,
+    "rewrites": [],
+    "scenario": "empty_input",
+    "sqlite_equal": true
+  }
+]

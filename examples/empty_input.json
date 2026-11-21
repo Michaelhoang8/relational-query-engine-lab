@@ -1,0 +1,74 @@
+{
+  "plan": {
+    "algorithm": "nested",
+    "keys": [
+      [
+        "l.key",
+        "r.key"
+      ]
+    ],
+    "kind": "left",
+    "left": {
+      "op": "scan",
+      "table": "left"
+    },
+    "op": "join",
+    "right": {
+      "op": "scan",
+      "table": "right"
+    }
+  },
+  "tables": {
+    "left": {
+      "columns": [
+        [
+          "l.key",
+          "integer"
+        ],
+        [
+          "l.value",
+          "text"
+        ]
+      ],
+      "rows": []
+    },
+    "right": {
+      "columns": [
+        [
+          "r.key",
+          "integer"
+        ],
+        [
+          "r.score",
+          "integer"
+        ]
+      ],
+      "rows": [
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          12
+        ],
+        [
+          2,
+          null
+        ],
+        [
+          null,
+          99
+        ],
+        [
+          -1,
+          4
+        ],
+        [
+          -2,
+          5
+        ]
+      ]
+    }
+  }
+}

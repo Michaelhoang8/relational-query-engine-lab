@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1140 490" role="img" aria-label="Actual operator row flow before and after safe predicate pushdown">
+<rect width="100%" height="100%" fill="#f7f5ee"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#80908c"/></marker></defs>
+<style>text{font-family:Arial,sans-serif;font-size:14px}.small{font-size:12px}.mono{font-family:monospace;font-size:13px}</style>
+<text x="285" y="28" fill="#9b472f" text-anchor="middle" class="">Filter after join</text>
+<path d="M285 216 L285 134" stroke="#80908c" fill="none" stroke-width="1.6" marker-end="url(#arrow)"/>
+<text x="309.0" y="172.5" fill="#718080" text-anchor="middle" class="small">320 rows</text>
+<path d="M140 356 L285 279" stroke="#80908c" fill="none" stroke-width="1.6" marker-end="url(#arrow)"/>
+<text x="236.5" y="315.0" fill="#718080" text-anchor="middle" class="small">320 rows</text>
+<path d="M430 356 L285 279" stroke="#80908c" fill="none" stroke-width="1.6" marker-end="url(#arrow)"/>
+<text x="381.5" y="315.0" fill="#718080" text-anchor="middle" class="small">320 rows</text>
+<rect x="175.0" y="71" width="220" height="62" fill="#eeeae0" stroke="#b8c1b9" rx="3"/>
+<text x="285" y="96" fill="#202f33" text-anchor="middle" class="">Select l.score &lt; 3</text>
+<text x="285" y="118" fill="#3f746a" text-anchor="middle" class="mono">output 12</text>
+<rect x="175.0" y="216" width="220" height="62" fill="#eeeae0" stroke="#b8c1b9" rx="3"/>
+<text x="285" y="241" fill="#202f33" text-anchor="middle" class="">Nested inner join</text>
+<text x="285" y="263" fill="#3f746a" text-anchor="middle" class="mono">output 320</text>
+<rect x="30.0" y="356" width="220" height="62" fill="#eeeae0" stroke="#b8c1b9" rx="3"/>
+<text x="140" y="381" fill="#202f33" text-anchor="middle" class="">Scan left</text>
+<text x="140" y="403" fill="#3f746a" text-anchor="middle" class="mono">output 320</text>
+<rect x="320.0" y="356" width="220" height="62" fill="#eeeae0" stroke="#b8c1b9" rx="3"/>
+<text x="430" y="381" fill="#202f33" text-anchor="middle" class="">Scan right</text>
+<text x="430" y="403" fill="#3f746a" text-anchor="middle" class="mono">output 320</text>
+<text x="285" y="470" fill="#9b472f" text-anchor="middle" class="mono">102,400 candidate pairs · 12 final rows</text>
+<text x="855" y="28" fill="#9b472f" text-anchor="middle" class="">Filter before join</text>
+<path d="M710 216 L855 134" stroke="#80908c" fill="none" stroke-width="1.6" marker-end="url(#arrow)"/>
+<text x="806.5" y="172.5" fill="#718080" text-anchor="middle" class="small">12 rows</text>
+<path d="M1000 216 L855 134" stroke="#80908c" fill="none" stroke-width="1.6" marker-end="url(#arrow)"/>
+<text x="951.5" y="172.5" fill="#718080" text-anchor="middle" class="small">320 rows</text>
+<path d="M710 356 L710 279" stroke="#80908c" fill="none" stroke-width="1.6" marker-end="url(#arrow)"/>
+<text x="734.0" y="315.0" fill="#718080" text-anchor="middle" class="small">320 rows</text>
+<rect x="745.0" y="71" width="220" height="62" fill="#eeeae0" stroke="#b8c1b9" rx="3"/>
+<text x="855" y="96" fill="#202f33" text-anchor="middle" class="">Nested inner join</text>
+<text x="855" y="118" fill="#3f746a" text-anchor="middle" class="mono">output 12</text>
+<rect x="600.0" y="216" width="220" height="62" fill="#eeeae0" stroke="#b8c1b9" rx="3"/>
+<text x="710" y="241" fill="#202f33" text-anchor="middle" class="">Select l.score &lt; 3</text>
+<text x="710" y="263" fill="#3f746a" text-anchor="middle" class="mono">output 12</text>
+<rect x="890.0" y="216" width="220" height="62" fill="#eeeae0" stroke="#b8c1b9" rx="3"/>
+<text x="1000" y="241" fill="#202f33" text-anchor="middle" class="">Scan right</text>
+<text x="1000" y="263" fill="#3f746a" text-anchor="middle" class="mono">output 320</text>
+<rect x="600.0" y="356" width="220" height="62" fill="#eeeae0" stroke="#b8c1b9" rx="3"/>
+<text x="710" y="381" fill="#202f33" text-anchor="middle" class="">Scan left</text>
+<text x="710" y="403" fill="#3f746a" text-anchor="middle" class="mono">output 320</text>
+<text x="855" y="470" fill="#9b472f" text-anchor="middle" class="mono">3,840 candidate pairs · 12 final rows</text>
+</svg>

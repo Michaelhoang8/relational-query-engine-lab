@@ -1,0 +1,551 @@
+{
+  "hash": {
+    "columns": [
+      [
+        "l.key",
+        "integer"
+      ],
+      [
+        "l.value",
+        "text"
+      ],
+      [
+        "r.key",
+        "integer"
+      ],
+      [
+        "r.score",
+        "integer"
+      ]
+    ],
+    "rows": [
+      [
+        1,
+        "alpha",
+        1,
+        8
+      ],
+      [
+        1,
+        "alpha",
+        1,
+        12
+      ],
+      [
+        1,
+        "alpha",
+        1,
+        8
+      ],
+      [
+        1,
+        "alpha",
+        1,
+        12
+      ],
+      [
+        2,
+        "beta",
+        2,
+        null
+      ],
+      [
+        9,
+        "unmatched",
+        null,
+        null
+      ]
+    ],
+    "stats": {
+      "root": {
+        "candidate_pairs": 5,
+        "distinct_build_keys": 4,
+        "input_rows": 10,
+        "largest_key_group": 2,
+        "null_key_rows": 1,
+        "operator": "join",
+        "output_rows": 6,
+        "predicate_evaluations": 0,
+        "right_materialized": 6
+      },
+      "root.left": {
+        "candidate_pairs": 0,
+        "distinct_build_keys": 0,
+        "input_rows": 7,
+        "largest_key_group": 0,
+        "null_key_rows": 0,
+        "operator": "select",
+        "output_rows": 4,
+        "predicate_evaluations": 7,
+        "right_materialized": 0
+      },
+      "root.left.input": {
+        "candidate_pairs": 0,
+        "distinct_build_keys": 0,
+        "input_rows": 0,
+        "largest_key_group": 0,
+        "null_key_rows": 0,
+        "operator": "scan",
+        "output_rows": 7,
+        "predicate_evaluations": 0,
+        "right_materialized": 0
+      },
+      "root.right": {
+        "candidate_pairs": 0,
+        "distinct_build_keys": 0,
+        "input_rows": 0,
+        "largest_key_group": 0,
+        "null_key_rows": 0,
+        "operator": "scan",
+        "output_rows": 6,
+        "predicate_evaluations": 0,
+        "right_materialized": 0
+      }
+    }
+  },
+  "hash_plan": {
+    "algorithm": "hash",
+    "keys": [
+      [
+        "l.key",
+        "r.key"
+      ]
+    ],
+    "kind": "left",
+    "left": {
+      "input": {
+        "op": "scan",
+        "table": "left"
+      },
+      "op": "select",
+      "predicate": {
+        "args": [
+          {
+            "column": "l.key"
+          },
+          {
+            "literal": 0
+          }
+        ],
+        "op": "gt"
+      }
+    },
+    "op": "join",
+    "right": {
+      "op": "scan",
+      "table": "right"
+    }
+  },
+  "input": {
+    "plan": {
+      "input": {
+        "algorithm": "nested",
+        "keys": [
+          [
+            "l.key",
+            "r.key"
+          ]
+        ],
+        "kind": "left",
+        "left": {
+          "op": "scan",
+          "table": "left"
+        },
+        "op": "join",
+        "right": {
+          "op": "scan",
+          "table": "right"
+        }
+      },
+      "op": "select",
+      "predicate": {
+        "args": [
+          {
+            "column": "l.key"
+          },
+          {
+            "literal": 0
+          }
+        ],
+        "op": "gt"
+      }
+    },
+    "tables": {
+      "left": {
+        "columns": [
+          [
+            "l.key",
+            "integer"
+          ],
+          [
+            "l.value",
+            "text"
+          ]
+        ],
+        "rows": [
+          [
+            1,
+            "alpha"
+          ],
+          [
+            1,
+            "alpha"
+          ],
+          [
+            2,
+            "beta"
+          ],
+          [
+            null,
+            "unknown"
+          ],
+          [
+            -1,
+            "minus-one"
+          ],
+          [
+            -2,
+            "minus-two"
+          ],
+          [
+            9,
+            "unmatched"
+          ]
+        ]
+      },
+      "right": {
+        "columns": [
+          [
+            "r.key",
+            "integer"
+          ],
+          [
+            "r.score",
+            "integer"
+          ]
+        ],
+        "rows": [
+          [
+            1,
+            8
+          ],
+          [
+            1,
+            12
+          ],
+          [
+            2,
+            null
+          ],
+          [
+            null,
+            99
+          ],
+          [
+            -1,
+            4
+          ],
+          [
+            -2,
+            5
+          ]
+        ]
+      }
+    }
+  },
+  "optimized": {
+    "columns": [
+      [
+        "l.key",
+        "integer"
+      ],
+      [
+        "l.value",
+        "text"
+      ],
+      [
+        "r.key",
+        "integer"
+      ],
+      [
+        "r.score",
+        "integer"
+      ]
+    ],
+    "rows": [
+      [
+        1,
+        "alpha",
+        1,
+        8
+      ],
+      [
+        1,
+        "alpha",
+        1,
+        12
+      ],
+      [
+        1,
+        "alpha",
+        1,
+        8
+      ],
+      [
+        1,
+        "alpha",
+        1,
+        12
+      ],
+      [
+        2,
+        "beta",
+        2,
+        null
+      ],
+      [
+        9,
+        "unmatched",
+        null,
+        null
+      ]
+    ],
+    "stats": {
+      "root": {
+        "candidate_pairs": 24,
+        "distinct_build_keys": 0,
+        "input_rows": 10,
+        "largest_key_group": 0,
+        "null_key_rows": 1,
+        "operator": "join",
+        "output_rows": 6,
+        "predicate_evaluations": 0,
+        "right_materialized": 6
+      },
+      "root.left": {
+        "candidate_pairs": 0,
+        "distinct_build_keys": 0,
+        "input_rows": 7,
+        "largest_key_group": 0,
+        "null_key_rows": 0,
+        "operator": "select",
+        "output_rows": 4,
+        "predicate_evaluations": 7,
+        "right_materialized": 0
+      },
+      "root.left.input": {
+        "candidate_pairs": 0,
+        "distinct_build_keys": 0,
+        "input_rows": 0,
+        "largest_key_group": 0,
+        "null_key_rows": 0,
+        "operator": "scan",
+        "output_rows": 7,
+        "predicate_evaluations": 0,
+        "right_materialized": 0
+      },
+      "root.right": {
+        "candidate_pairs": 0,
+        "distinct_build_keys": 0,
+        "input_rows": 0,
+        "largest_key_group": 0,
+        "null_key_rows": 0,
+        "operator": "scan",
+        "output_rows": 6,
+        "predicate_evaluations": 0,
+        "right_materialized": 0
+      }
+    }
+  },
+  "optimized_plan": {
+    "algorithm": "nested",
+    "keys": [
+      [
+        "l.key",
+        "r.key"
+      ]
+    ],
+    "kind": "left",
+    "left": {
+      "input": {
+        "op": "scan",
+        "table": "left"
+      },
+      "op": "select",
+      "predicate": {
+        "args": [
+          {
+            "column": "l.key"
+          },
+          {
+            "literal": 0
+          }
+        ],
+        "op": "gt"
+      }
+    },
+    "op": "join",
+    "right": {
+      "op": "scan",
+      "table": "right"
+    }
+  },
+  "original": {
+    "columns": [
+      [
+        "l.key",
+        "integer"
+      ],
+      [
+        "l.value",
+        "text"
+      ],
+      [
+        "r.key",
+        "integer"
+      ],
+      [
+        "r.score",
+        "integer"
+      ]
+    ],
+    "rows": [
+      [
+        1,
+        "alpha",
+        1,
+        8
+      ],
+      [
+        1,
+        "alpha",
+        1,
+        12
+      ],
+      [
+        1,
+        "alpha",
+        1,
+        8
+      ],
+      [
+        1,
+        "alpha",
+        1,
+        12
+      ],
+      [
+        2,
+        "beta",
+        2,
+        null
+      ],
+      [
+        9,
+        "unmatched",
+        null,
+        null
+      ]
+    ],
+    "stats": {
+      "root": {
+        "candidate_pairs": 0,
+        "distinct_build_keys": 0,
+        "input_rows": 9,
+        "largest_key_group": 0,
+        "null_key_rows": 0,
+        "operator": "select",
+        "output_rows": 6,
+        "predicate_evaluations": 9,
+        "right_materialized": 0
+      },
+      "root.input": {
+        "candidate_pairs": 42,
+        "distinct_build_keys": 0,
+        "input_rows": 13,
+        "largest_key_group": 0,
+        "null_key_rows": 2,
+        "operator": "join",
+        "output_rows": 9,
+        "predicate_evaluations": 0,
+        "right_materialized": 6
+      },
+      "root.input.left": {
+        "candidate_pairs": 0,
+        "distinct_build_keys": 0,
+        "input_rows": 0,
+        "largest_key_group": 0,
+        "null_key_rows": 0,
+        "operator": "scan",
+        "output_rows": 7,
+        "predicate_evaluations": 0,
+        "right_materialized": 0
+      },
+      "root.input.right": {
+        "candidate_pairs": 0,
+        "distinct_build_keys": 0,
+        "input_rows": 0,
+        "largest_key_group": 0,
+        "null_key_rows": 0,
+        "operator": "scan",
+        "output_rows": 6,
+        "predicate_evaluations": 0,
+        "right_materialized": 0
+      }
+    }
+  },
+  "rewrites": [
+    "push_left_predicate_through_left_join"
+  ],
+  "sqlite": {
+    "columns": [
+      "l.key",
+      "l.value",
+      "r.key",
+      "r.score"
+    ],
+    "parameters": [
+      0
+    ],
+    "query": "SELECT * FROM (SELECT l.\"l.key\" AS \"l.key\", l.\"l.value\" AS \"l.value\", r.\"r.key\" AS \"r.key\", r.\"r.score\" AS \"r.score\" FROM (SELECT \"l.key\", \"l.value\" FROM \"left\") l LEFT JOIN (SELECT \"r.key\", \"r.score\" FROM \"right\") r ON l.\"l.key\" = r.\"r.key\") WHERE (\"l.key\" > ?)",
+    "rows": [
+      [
+        1,
+        "alpha",
+        1,
+        8
+      ],
+      [
+        1,
+        "alpha",
+        1,
+        12
+      ],
+      [
+        1,
+        "alpha",
+        1,
+        8
+      ],
+      [
+        1,
+        "alpha",
+        1,
+        12
+      ],
+      [
+        2,
+        "beta",
+        2,
+        null
+      ],
+      [
+        9,
+        "unmatched",
+        null,
+        null
+      ]
+    ],
+    "sqlite_version": "3.50.4"
+  }
+}

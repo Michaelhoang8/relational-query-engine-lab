@@ -1,0 +1,117 @@
+{
+  "plan": {
+    "input": {
+      "algorithm": "nested",
+      "keys": [
+        [
+          "l.key",
+          "r.key"
+        ]
+      ],
+      "kind": "left",
+      "left": {
+        "op": "scan",
+        "table": "left"
+      },
+      "op": "join",
+      "right": {
+        "op": "scan",
+        "table": "right"
+      }
+    },
+    "op": "select",
+    "predicate": {
+      "args": [
+        {
+          "column": "r.score"
+        },
+        {
+          "literal": 10
+        }
+      ],
+      "op": "gt"
+    }
+  },
+  "tables": {
+    "left": {
+      "columns": [
+        [
+          "l.key",
+          "integer"
+        ],
+        [
+          "l.value",
+          "text"
+        ]
+      ],
+      "rows": [
+        [
+          1,
+          "alpha"
+        ],
+        [
+          1,
+          "alpha"
+        ],
+        [
+          2,
+          "beta"
+        ],
+        [
+          null,
+          "unknown"
+        ],
+        [
+          -1,
+          "minus-one"
+        ],
+        [
+          -2,
+          "minus-two"
+        ],
+        [
+          9,
+          "unmatched"
+        ]
+      ]
+    },
+    "right": {
+      "columns": [
+        [
+          "r.key",
+          "integer"
+        ],
+        [
+          "r.score",
+          "integer"
+        ]
+      ],
+      "rows": [
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          12
+        ],
+        [
+          2,
+          null
+        ],
+        [
+          null,
+          99
+        ],
+        [
+          -1,
+          4
+        ],
+        [
+          -2,
+          5
+        ]
+      ]
+    }
+  }
+}

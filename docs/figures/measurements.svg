@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1140 490" role="img" aria-label="Exact join candidate counts and measured local durations">
+<rect width="100%" height="100%" fill="#f7f5ee"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#80908c"/></marker></defs>
+<style>text{font-family:Arial,sans-serif;font-size:14px}.small{font-size:12px}.mono{font-family:monospace;font-size:13px}</style>
+<path d="M390.0 30V420" stroke="#dce0d7"/>
+<text x="390.0" y="446" fill="#718080" text-anchor="middle" class="small">0.0</text>
+<path d="M555.0 30V420" stroke="#dce0d7"/>
+<text x="555.0" y="446" fill="#718080" text-anchor="middle" class="small">23.3</text>
+<path d="M720.0 30V420" stroke="#dce0d7"/>
+<text x="720.0" y="446" fill="#718080" text-anchor="middle" class="small">46.7</text>
+<path d="M885.0 30V420" stroke="#dce0d7"/>
+<text x="885.0" y="446" fill="#718080" text-anchor="middle" class="small">70.0</text>
+<path d="M1050.0 30V420" stroke="#dce0d7"/>
+<text x="1050.0" y="446" fill="#718080" text-anchor="middle" class="small">93.4</text>
+<text x="15" y="54" fill="#202f33" text-anchor="start" class="small">uniform nested late filter</text>
+<text x="365" y="54" fill="#9b472f" text-anchor="end" class="mono">102,400</text>
+<circle cx="736.6810413389654" cy="46" r="3" fill="#9b472f" opacity=".55"/>
+<circle cx="624.9092451529665" cy="48" r="3" fill="#9b472f" opacity=".55"/>
+<circle cx="636.7810749191425" cy="50" r="3" fill="#9b472f" opacity=".55"/>
+<circle cx="622.2942330464291" cy="52" r="3" fill="#9b472f" opacity=".55"/>
+<circle cx="622.302716459589" cy="54" r="3" fill="#9b472f" opacity=".55"/>
+<circle cx="627.0407027093901" cy="46" r="3" fill="#9b472f" opacity=".55"/>
+<circle cx="617.3660769516268" cy="48" r="3" fill="#9b472f" opacity=".55"/>
+<circle cx="619.1581979816547" cy="50" r="3" fill="#9b472f" opacity=".55"/>
+<circle cx="624.6448454428165" cy="52" r="3" fill="#9b472f" opacity=".55"/>
+<circle cx="636.8821689259646" cy="54" r="3" fill="#9b472f" opacity=".55"/>
+<circle cx="629.3729343772645" cy="46" r="3" fill="#9b472f" opacity=".55"/>
+<circle cx="611.6355313621181" cy="48" r="3" fill="#9b472f" opacity=".55"/>
+<path d="M624.7770452978915 40V60" stroke="#202f33" stroke-width="2"/>
+<text x="15" y="102" fill="#202f33" text-anchor="start" class="small">uniform nested pushdown</text>
+<text x="365" y="102" fill="#9b472f" text-anchor="end" class="mono">3,840</text>
+<circle cx="401.67317650801505" cy="94" r="3" fill="#9b472f" opacity=".55"/>
+<circle cx="401.8032555098001" cy="96" r="3" fill="#9b472f" opacity=".55"/>
+<circle cx="401.8916243968823" cy="98" r="3" fill="#9b472f" opacity=".55"/>
+<circle cx="401.89869390784895" cy="100" r="3" fill="#9b472f" opacity=".55"/>
+<circle cx="401.94888743571164" cy="102" r="3" fill="#9b472f" opacity=".55"/>
+<circle cx="401.5445114084233" cy="94" r="3" fill="#9b472f" opacity=".55"/>
+<circle cx="401.6993336985914" cy="96" r="3" fill="#9b472f" opacity=".55"/>
+<circle cx="402.3504356586133" cy="98" r="3" fill="#9b472f" opacity=".55"/>
+<circle cx="401.55440872377653" cy="100" r="3" fill="#9b472f" opacity=".55"/>
+<circle cx="401.50916385359045" cy="102" r="3" fill="#9b472f" opacity=".55"/>
+<circle cx="401.99766706138104" cy="94" r="3" fill="#9b472f" opacity=".55"/>
+<circle cx="402.34690090313" cy="96" r="3" fill="#9b472f" opacity=".55"/>
+<path d="M401.8474399533412 88V108" stroke="#202f33" stroke-width="2"/>
+<text x="15" y="150" fill="#202f33" text-anchor="start" class="small">uniform hash late filter</text>
+<text x="365" y="150" fill="#3f746a" text-anchor="end" class="mono">320</text>
+<circle cx="396.22682525936267" cy="142" r="3" fill="#3f746a" opacity=".55"/>
+<circle cx="396.0267580990085" cy="144" r="3" fill="#3f746a" opacity=".55"/>
+<circle cx="400.11364238878775" cy="146" r="3" fill="#3f746a" opacity=".55"/>
+<circle cx="396.27631183612874" cy="148" r="3" fill="#3f746a" opacity=".55"/>
+<circle cx="396.604337144978" cy="150" r="3" fill="#3f746a" opacity=".55"/>
+<circle cx="395.9115250702533" cy="142" r="3" fill="#3f746a" opacity=".55"/>
+<circle cx="397.49509552676693" cy="144" r="3" fill="#3f746a" opacity=".55"/>
+<circle cx="397.26533642035315" cy="146" r="3" fill="#3f746a" opacity=".55"/>
+<circle cx="396.3745780385642" cy="148" r="3" fill="#3f746a" opacity=".55"/>
+<circle cx="396.4212368109436" cy="150" r="3" fill="#3f746a" opacity=".55"/>
+<circle cx="395.9758576200491" cy="142" r="3" fill="#3f746a" opacity=".55"/>
+<circle cx="395.9730298156625" cy="144" r="3" fill="#3f746a" opacity=".55"/>
+<path d="M396.32544493734645 136V156" stroke="#202f33" stroke-width="2"/>
+<text x="15" y="198" fill="#202f33" text-anchor="start" class="small">uniform hash pushdown</text>
+<text x="365" y="198" fill="#3f746a" text-anchor="end" class="mono">12</text>
+<circle cx="393.7220975239038" cy="190" r="3" fill="#3f746a" opacity=".55"/>
+<circle cx="393.92640639083794" cy="192" r="3" fill="#3f746a" opacity=".55"/>
+<circle cx="394.22473975362755" cy="194" r="3" fill="#3f746a" opacity=".55"/>
+<circle cx="393.6973542355208" cy="196" r="3" fill="#3f746a" opacity=".55"/>
+<circle cx="393.8422792103356" cy="198" r="3" fill="#3f746a" opacity=".55"/>
+<circle cx="393.6485746098514" cy="190" r="3" fill="#3f746a" opacity=".55"/>
+<circle cx="394.0395185663032" cy="192" r="3" fill="#3f746a" opacity=".55"/>
+<circle cx="393.7602728831233" cy="194" r="3" fill="#3f746a" opacity=".55"/>
+<circle cx="396.928827698344" cy="196" r="3" fill="#3f746a" opacity=".55"/>
+<circle cx="394.25655255297715" cy="198" r="3" fill="#3f746a" opacity=".55"/>
+<circle cx="394.39228716353546" cy="190" r="3" fill="#3f746a" opacity=".55"/>
+<circle cx="393.8981283469716" cy="192" r="3" fill="#3f746a" opacity=".55"/>
+<path d="M393.91226736890474 184V204" stroke="#202f33" stroke-width="2"/>
+<text x="15" y="246" fill="#202f33" text-anchor="start" class="small">skewed nested late filter</text>
+<text x="365" y="246" fill="#9b472f" text-anchor="end" class="mono">102,400</text>
+<circle cx="860.1048055000795" cy="238" r="3" fill="#9b472f" opacity=".55"/>
+<circle cx="1018.5714285714286" cy="240" r="3" fill="#9b472f" opacity=".55"/>
+<circle cx="896.0900302221594" cy="242" r="3" fill="#9b472f" opacity=".55"/>
+<circle cx="836.7174493204433" cy="244" r="3" fill="#9b472f" opacity=".55"/>
+<circle cx="845.731782753928" cy="246" r="3" fill="#9b472f" opacity=".55"/>
+<circle cx="834.5683179866032" cy="238" r="3" fill="#9b472f" opacity=".55"/>
+<circle cx="837.4335907813577" cy="240" r="3" fill="#9b472f" opacity=".55"/>
+<circle cx="834.3329032714162" cy="242" r="3" fill="#9b472f" opacity=".55"/>
+<circle cx="872.1745815733198" cy="244" r="3" fill="#9b472f" opacity=".55"/>
+<circle cx="926.5787101677242" cy="246" r="3" fill="#9b472f" opacity=".55"/>
+<circle cx="840.098796415758" cy="238" r="3" fill="#9b472f" opacity=".55"/>
+<circle cx="826.0523850762623" cy="240" r="3" fill="#9b472f" opacity=".55"/>
+<path d="M842.915289584843 232V252" stroke="#202f33" stroke-width="2"/>
+<text x="15" y="294" fill="#202f33" text-anchor="start" class="small">skewed nested pushdown</text>
+<text x="365" y="294" fill="#9b472f" text-anchor="end" class="mono">3,840</text>
+<circle cx="403.1471695445467" cy="286" r="3" fill="#9b472f" opacity=".55"/>
+<circle cx="403.7544405365759" cy="288" r="3" fill="#9b472f" opacity=".55"/>
+<circle cx="404.173662536894" cy="290" r="3" fill="#9b472f" opacity=".55"/>
+<circle cx="402.7371379084852" cy="292" r="3" fill="#9b472f" opacity=".55"/>
+<circle cx="402.94073982432263" cy="294" r="3" fill="#9b472f" opacity=".55"/>
+<circle cx="403.2708859864619" cy="286" r="3" fill="#9b472f" opacity=".55"/>
+<circle cx="403.5741680069281" cy="288" r="3" fill="#9b472f" opacity=".55"/>
+<circle cx="404.417560665241" cy="290" r="3" fill="#9b472f" opacity=".55"/>
+<circle cx="403.7261624927096" cy="292" r="3" fill="#9b472f" opacity=".55"/>
+<circle cx="403.94036867499693" cy="294" r="3" fill="#9b472f" opacity=".55"/>
+<circle cx="402.96124140612574" cy="286" r="3" fill="#9b472f" opacity=".55"/>
+<circle cx="402.9965889609586" cy="288" r="3" fill="#9b472f" opacity=".55"/>
+<path d="M403.422526996695 280V300" stroke="#202f33" stroke-width="2"/>
+<text x="15" y="342" fill="#202f33" text-anchor="start" class="small">skewed hash late filter</text>
+<text x="365" y="342" fill="#3f746a" text-anchor="end" class="mono">25,600</text>
+<circle cx="722.0711899754334" cy="334" r="3" fill="#3f746a" opacity=".55"/>
+<circle cx="689.8257365546738" cy="336" r="3" fill="#3f746a" opacity=".55"/>
+<circle cx="656.363620296566" cy="338" r="3" fill="#3f746a" opacity=".55"/>
+<circle cx="674.8546331807497" cy="340" r="3" fill="#3f746a" opacity=".55"/>
+<circle cx="682.3567982184832" cy="342" r="3" fill="#3f746a" opacity=".55"/>
+<circle cx="655.9330870787014" cy="334" r="3" fill="#3f746a" opacity=".55"/>
+<circle cx="659.901203584242" cy="336" r="3" fill="#3f746a" opacity=".55"/>
+<circle cx="733.9932132694721" cy="338" r="3" fill="#3f746a" opacity=".55"/>
+<circle cx="673.1211890917446" cy="340" r="3" fill="#3f746a" opacity=".55"/>
+<circle cx="664.3868082925364" cy="342" r="3" fill="#3f746a" opacity=".55"/>
+<circle cx="655.7563493045369" cy="334" r="3" fill="#3f746a" opacity=".55"/>
+<circle cx="659.2345487000937" cy="336" r="3" fill="#3f746a" opacity=".55"/>
+<path d="M668.7539986921404 328V348" stroke="#202f33" stroke-width="2"/>
+<text x="15" y="390" fill="#202f33" text-anchor="start" class="small">skewed hash pushdown</text>
+<text x="365" y="390" fill="#3f746a" text-anchor="end" class="mono">960</text>
+<circle cx="397.2158498435871" cy="382" r="3" fill="#3f746a" opacity=".55"/>
+<circle cx="397.19464131068736" cy="384" r="3" fill="#3f746a" opacity=".55"/>
+<circle cx="396.9486223290504" cy="386" r="3" fill="#3f746a" opacity=".55"/>
+<circle cx="397.0150757321362" cy="388" r="3" fill="#3f746a" opacity=".55"/>
+<circle cx="396.86661600183805" cy="390" r="3" fill="#3f746a" opacity=".55"/>
+<circle cx="397.66617769215816" cy="382" r="3" fill="#3f746a" opacity=".55"/>
+<circle cx="397.25968081157987" cy="384" r="3" fill="#3f746a" opacity=".55"/>
+<circle cx="396.86661600183805" cy="386" r="3" fill="#3f746a" opacity=".55"/>
+<circle cx="396.60150934059135" cy="388" r="3" fill="#3f746a" opacity=".55"/>
+<circle cx="396.868736855128" cy="390" r="3" fill="#3f746a" opacity=".55"/>
+<circle cx="397.10556547250843" cy="382" r="3" fill="#3f746a" opacity=".55"/>
+<circle cx="397.06102755341897" cy="384" r="3" fill="#3f746a" opacity=".55"/>
+<path d="M397.0380516427776 376V396" stroke="#202f33" stroke-width="2"/>
+<text x="365" y="20" fill="#718080" text-anchor="end" class="small">PAIRS</text>
+<text x="720" y="480" fill="#718080" text-anchor="middle" class="small">Elapsed milliseconds · dots: actual samples · vertical tick: median</text>
+</svg>

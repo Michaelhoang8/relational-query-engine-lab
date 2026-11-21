@@ -1,0 +1,22 @@
+{
+  "plan": {
+    "input": {
+      "op": "scan",
+      "table": "empty"
+    },
+    "op": "select",
+    "predicate": {
+      "op": "true"
+    }
+  },
+  "tables": {
+    "empty": {
+      "columns": [],
+      "rows": [
+        [],
+        [],
+        []
+      ]
+    }
+  }
+}

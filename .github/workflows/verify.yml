@@ -1,0 +1,21 @@
+name: Verify relational semantics and reproduce
+on: [push, pull_request, workflow_dispatch]
+jobs:
+  study:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Verify preserved evidence
+        run: python scripts/verify_results.py
+      - name: Tests and fresh study
+        run: python scripts/run_study.py --output-dir build/ci --samples 3 --random-cases 20
+      - name: CLI plan and SQLite check
+        run: python -m relab examples/selective_inner.json --optimize --sqlite-check --output build/cli.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: relational-reproduction
+          path: build/ci

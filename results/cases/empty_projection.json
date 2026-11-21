@@ -1,0 +1,234 @@
+{
+  "hash": {
+    "columns": [],
+    "rows": [
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "stats": {
+      "root": {
+        "candidate_pairs": 0,
+        "distinct_build_keys": 0,
+        "input_rows": 7,
+        "largest_key_group": 0,
+        "null_key_rows": 0,
+        "operator": "project",
+        "output_rows": 7,
+        "predicate_evaluations": 0,
+        "right_materialized": 0
+      },
+      "root.input": {
+        "candidate_pairs": 0,
+        "distinct_build_keys": 0,
+        "input_rows": 0,
+        "largest_key_group": 0,
+        "null_key_rows": 0,
+        "operator": "scan",
+        "output_rows": 7,
+        "predicate_evaluations": 0,
+        "right_materialized": 0
+      }
+    }
+  },
+  "hash_plan": {
+    "columns": [],
+    "input": {
+      "op": "scan",
+      "table": "left"
+    },
+    "op": "project"
+  },
+  "input": {
+    "plan": {
+      "columns": [],
+      "input": {
+        "op": "scan",
+        "table": "left"
+      },
+      "op": "project"
+    },
+    "tables": {
+      "left": {
+        "columns": [
+          [
+            "l.key",
+            "integer"
+          ],
+          [
+            "l.value",
+            "text"
+          ]
+        ],
+        "rows": [
+          [
+            1,
+            "alpha"
+          ],
+          [
+            1,
+            "alpha"
+          ],
+          [
+            2,
+            "beta"
+          ],
+          [
+            null,
+            "unknown"
+          ],
+          [
+            -1,
+            "minus-one"
+          ],
+          [
+            -2,
+            "minus-two"
+          ],
+          [
+            9,
+            "unmatched"
+          ]
+        ]
+      },
+      "right": {
+        "columns": [
+          [
+            "r.key",
+            "integer"
+          ],
+          [
+            "r.score",
+            "integer"
+          ]
+        ],
+        "rows": [
+          [
+            1,
+            8
+          ],
+          [
+            1,
+            12
+          ],
+          [
+            2,
+            null
+          ],
+          [
+            null,
+            99
+          ],
+          [
+            -1,
+            4
+          ],
+          [
+            -2,
+            5
+          ]
+        ]
+      }
+    }
+  },
+  "optimized": {
+    "columns": [],
+    "rows": [
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "stats": {
+      "root": {
+        "candidate_pairs": 0,
+        "distinct_build_keys": 0,
+        "input_rows": 7,
+        "largest_key_group": 0,
+        "null_key_rows": 0,
+        "operator": "project",
+        "output_rows": 7,
+        "predicate_evaluations": 0,
+        "right_materialized": 0
+      },
+      "root.input": {
+        "candidate_pairs": 0,
+        "distinct_build_keys": 0,
+        "input_rows": 0,
+        "largest_key_group": 0,
+        "null_key_rows": 0,
+        "operator": "scan",
+        "output_rows": 7,
+        "predicate_evaluations": 0,
+        "right_materialized": 0
+      }
+    }
+  },
+  "optimized_plan": {
+    "columns": [],
+    "input": {
+      "op": "scan",
+      "table": "left"
+    },
+    "op": "project"
+  },
+  "original": {
+    "columns": [],
+    "rows": [
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "stats": {
+      "root": {
+        "candidate_pairs": 0,
+        "distinct_build_keys": 0,
+        "input_rows": 7,
+        "largest_key_group": 0,
+        "null_key_rows": 0,
+        "operator": "project",
+        "output_rows": 7,
+        "predicate_evaluations": 0,
+        "right_materialized": 0
+      },
+      "root.input": {
+        "candidate_pairs": 0,
+        "distinct_build_keys": 0,
+        "input_rows": 0,
+        "largest_key_group": 0,
+        "null_key_rows": 0,
+        "operator": "scan",
+        "output_rows": 7,
+        "predicate_evaluations": 0,
+        "right_materialized": 0
+      }
+    }
+  },
+  "rewrites": [],
+  "sqlite": {
+    "columns": [],
+    "parameters": [],
+    "query": "SELECT 1 AS \"__empty__\" FROM (SELECT \"l.key\", \"l.value\" FROM \"left\")",
+    "rows": [
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "sqlite_version": "3.50.4"
+  }
+}
