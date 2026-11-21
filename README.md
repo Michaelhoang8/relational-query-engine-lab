@@ -1,5 +1,7 @@
 # Relational query engine lab
 
+**[View the report in your browser](https://Michaelhoang8.github.io/relational-query-engine-lab/)**
+
 An iterator-style execution engine for typed relational plans, with SQL three-valued predicates, duplicate-preserving projection, and nested-loop/hash inner and left equijoins. SQLite independently checks the supported semantics through actual local queries.
 
 The repository contains complete inputs, original and optimized plans, outputs, counters, SQLite query parameters and real timing samples. It is a synthetic, AI-assisted database-execution exercise.
